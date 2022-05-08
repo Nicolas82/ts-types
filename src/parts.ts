@@ -75,6 +75,14 @@ export type MassTransferItem<LONG = Long> = {
     amount: LONG;
 };
 
+export type DiplomaItem = {
+    assetId: string;
+    sender: string;
+    recipient: string;
+    name: string;
+    description: string;
+};
+
 export type DataTransactionEntryGeneric<Type, Value> = {
     key: string;
     type: Type;
