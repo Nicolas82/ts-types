@@ -156,7 +156,7 @@ export type MassTransferTransactionFields<LONG = Long> = {
 
 export type DiplomaCampaignTransactionFields<LONG = Long> = {
     diplomes: Array<DiplomaItem>;
-}
+};
 
 export type DataTransactionFields<LONG = Long> = {
     data: Array<DataTransactionEntry<LONG>>;
@@ -503,7 +503,7 @@ export type DiplomaCampaignTransactionV2<LONG> = WithVersion<
 export type DiplomaCampaignTransactionMap<LONG = Long> = {
     1: MassTransferTransactionV1<LONG>;
     2: MassTransferTransactionV2<LONG>;
-}
+};
 
 //InvokeExpressionTransaction
 export type InvokeExpressionTransactionV1<LONG> = WithVersion<
@@ -577,8 +577,8 @@ export type SetAssetScriptTransaction<LONG = Long> =
     | SetAssetScriptTransactionV1<LONG>
     | SetAssetScriptTransactionV2<LONG>;
 
-export type DiplomaCampaignTransaction<LONG = Long> = 
-    | DiplomaCampaignTransactionV1<LONG>
+export type DiplomaCampaignTransaction<LONG = Long> =
+    | DiplomaCampaignTransactionV1<LONG>
     | DiplomaCampaignTransactionV2<Long>;
 
 export type InvokeScriptTransaction<LONG = Long> =
